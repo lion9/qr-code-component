@@ -1,0 +1,76 @@
+:root {
+    --state-900:  #1F314F;
+    --state-500:  #68778D;
+    --state-300:  #D5E1EF;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--state-300);
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    height: 500px;
+    padding: 16px 16px 40px 16px;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.texts {
+    padding: 0 16px;
+    max-width: 288px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+img {
+    width: 100%;
+    max-width: 288px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.heading {
+    color: var(--state-900);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--state-500);
+    line-height: 140%;
+    letter-spacing: .2px;
+}
